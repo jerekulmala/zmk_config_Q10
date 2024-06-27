@@ -75,7 +75,7 @@
         upper_layer {
 
             bindings = <
-                 &msc SCRL_UP                                                                                       &msc SCRL_DOWN
+                 &kp PG_UP                                                                                       &kp PG_DN
     &bt BT_SEL 0            &bt BT_SEL 1                             &td0                           &bt BT_SEL 2                     &bt BT_SEL 3
     &none        &kp UP     &none       &sys_reset &ext_power EP_TOG &none         &kp LT           &kp GT          &kp PIPE         &kp KP_EQUAL
     &kp LEFT     &kp DOWN   &kp RIGHT   &none      &kp BSLH          &kp AMPS      &kp LBRC         &kp RBRC        &kp CARET        &kp BSPC
