@@ -35,7 +35,7 @@
             bindings = <&out &kp>;
         };
 	
-        EALT1: EALT1 {
+        EALT1: tap_dance_1 {
             compatible = "zmk,behavior-tap-dance";
             label = "EALT1";
 	    tapping-term-ms = <300>;
@@ -43,7 +43,7 @@
             bindings = <&sl 1>, <&tog 1>;
         };
 
-        EALT2: EALT2 {
+        EALT2: tab_dance_2 {
             compatible = "zmk,behavior-tap-dance";
             label = "EALT2";
 	    tapping-term-ms = <300>;
