@@ -34,7 +34,9 @@
             tapping-term-ms = <500>;
             bindings = <&out &kp>;
         };
-	
+    };
+
+    behaviors {
         EALT1: tap_dance_1 {
             compatible = "zmk,behavior-tap-dance";
             label = "EALT1";
@@ -51,7 +53,7 @@
             bindings = <&sl 2>, <&tog 2>;
         };
     };
-
+    
     keymap {
         compatible = "zmk,keymap";
 
