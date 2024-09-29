@@ -52,6 +52,20 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        combo_esc {
+            bindings = <&kp ESC>;
+            key-positions = <7 8>;
+        };
+
+        combo_tab {
+            bindings = <&kp TAB>;
+            key-positions = <17 18>;
+        };
+    };
+    
     keymap {
         compatible = "zmk,keymap";
 
