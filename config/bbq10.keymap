@@ -52,20 +52,6 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        combo_esc {
-            bindings = <&kp ESC>;
-            key-positions = <7 8>;
-        };
-
-        combo_tab {
-            bindings = <&kp TAB>;
-            key-positions = <17 18>;
-        };
-    };
-    
     keymap {
         compatible = "zmk,keymap";
 
@@ -97,7 +83,7 @@
 &bt BT_SEL 0  &bt BT_SEL 1  &td0       &bt BT_SEL 2  &bt BT_SEL 3
 &kp INS       &kp UP        &kp END    &sys_reset    &ext_power EP_TOG  &none                &kp LT      &kp GT      &kp PIPE     &kp KP_EQUAL
 &kp LEFT      &kp DOWN      &kp RIGHT  &none         &kp BSLH           &kp AMPS             &kp LBRC    &kp RBRC    &kp CARET    &kp BSPC
-&sk LSHFT     &bt BT_SEL 2  &bt BT_SEL 3    &none    &bl BL_DEC         &bl BL_TOG           &bl BL_INC  &none       &bootloader  &kp ENTER
+&sk LSHFT     &none         &none      &none         &bl BL_DEC         &bl BL_TOG           &bl BL_INC  &none       &bootloader  &kp ENTER
                             &kp LCTRL                &kp LALT           &hm OUT_TOG SPACE    &tog SYM    &tog UPPER
             >;
         };
