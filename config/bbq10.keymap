@@ -35,7 +35,7 @@
     };
 
     behaviors {
-        altsym: tap_dance_1 {
+        altsym: altsym {
             compatible = "zmk,behavior-tap-dance";
             label = "altsym";
             tapping-term-ms = <300>;
@@ -43,14 +43,22 @@
             bindings = <&sl 1>, <&tog 1>;
         };
 
-        altupper: tab_dance_2 {
+        altupper: altupper {
             compatible = "zmk,behavior-tap-dance";
             label = "altupper";
             tapping-term-ms = <300>;
             #binding-cells = <0>;
             bindings = <&sl 2>, <&tog 2>;
         };
-    };
+
+	middleclick: middleclick {
+	    compatible = "zmk,behavior-tap-dance";
+	    label = "middleclick";
+	    tapping-term-ms = <300>;
+            #binding-cells = <0>;
+	    bindings = <&mkp RCLK>, <&mkp MCLK>;
+		    
+	};
 
     keymap {
         compatible = "zmk,keymap";
