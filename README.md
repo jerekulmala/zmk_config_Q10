@@ -14,3 +14,21 @@ Hey 👋 welcome. Use this repo to generate your own ZMK keymap for the BBQ10 BL
 ![image](https://github.com/ZitaoTech/zmk-config_9900/assets/145678024/a6140108-9e27-4d51-aa42-ba12233b8738)
 **5. Unzip the firmware.zip file. You should see one files: `bbq10-zmk.uf2`.**  
 **6. Flash the keyboard with your new firmware.**[How to flash the firmware](https://github.com/ZitaoTech/BB9900-USB_BLE_Keyboard?tab=readme-ov-file#-how-to-update-the-firmware---) 
+
+### Building locally
+
+I'd like to not wait for github actions if I have a pc that can build it quite quickly. 
+
+Something like this:
+
+1. Install West (I installed it from aur `python-west`, pip is propably fine too)
+2. `west init -l config`
+3. `west update`
+4. Install [zephyr-sdk](https://github.com/zephyrproject-rtos/sdk-ng/releases)
+5. `west build`
+
+Then after building I flash it with
+```
+udisksctl mount -b /dev/disk/by-label/NICENANO
+cp build/zephyr/zmk.uf2 /run/media/USER/NICENANO/
+```
